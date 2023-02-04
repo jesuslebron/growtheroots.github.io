@@ -36,17 +36,7 @@ header {
   /*border: 1px solid reD;*/
 }
 
-header.sticky {
-  padding: 0px 100px;
-  background-color: #fff;
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-}
-
-header.sticky ul li {
-  padding-top: 30px;
-}
-
-header .logoo {
+header .logo {
   position: relative;
   font-weight: 700;
   color: #fff;
@@ -56,6 +46,7 @@ header .logoo {
   letter-spacing: 2px;
   transition: 0.4s;
   justify-content: left;
+  transform: rotate(275deg) ;
 }
 
 header ul {
@@ -87,141 +78,12 @@ header ul li a:hover {
 color: #95dce0;
 }
 
-header ul .contacto:hover {
-cursor: default;
-}
 
-header ul li ul a {
-  letter-spacing: 0px;
-  margin: 0;
-}
-header.sticky ul li ul li,
-header ul li ul li {
-  margin-bottom: 8px;
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-top: 0;
-}
-
-header.sticky .submenu li a {
-  color: #000;
-}
-
-header.sticky ul li ul {
-  background: #fff;
-}
-
-header.sticky ul li a:hover{
-  color: #95dce0;
-}
-
-.contacto a {
-background: #95dce0;
-padding: 10%;
-border-radius: 7px;
-}
-
-.contacto a:hover{
-color: #fff;
-background: rgba(255, 255, 255, 0.1);
-transition: 0.5s;
-}
-
-header.sticky .contacto a:hover {
-background: rgba(202, 202, 202, 0.911);
-color: #fff;
-transition: 0.5s;
-}
-
-
-
-/* ESTILOS DROPDOWN (SUBMENU) MENU */
-
-.submenu1 {
-  position: relative;
-}
-
-.submenu2 {
-  padding-right: 1.5em;
-  padding-left: 1.5em;
-  padding-bottom: 1em;
-  padding-top: 1em;  
-  width: 11.5em;
-  height: 11em;
-  visibility: hidden;
-  position: absolute;
-  top: 5em;
-  left: -3.3em;
-  background: #253a5c;
-  border-radius: 9px;
-  /*border: 1px solid rgb(253, 0, 219);*/
-  /*transition: visibility 0.3s linear, opacity 0.3s linear;*/
-  margin: 20px 0 0 0;
-  _margin: 0; /*IE6 only*/
-  opacity: 0;
-  transition: all .2s ease-in-out;
-  z-index: 1;
-  display: table-column;
-}
-
-.submenu1:hover > .submenu2 {
-  /*nav.menu ul li ul:hover*/
-  opacity: 1;
-  visibility: visible;
-  margin: 0;
-  z-index: 1;
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-}
-
-.submenu1:hover > a {
-color: #95dce0;
-}
 
 /* CABECERA */
 
-.image_ini {
-  border-bottom: 1px solid rgba(163, 162, 162, 0.671);
-  height: 430px;
-  display: flex;
-  padding: 1%;
-  padding-top: 2%;
-  transition: all .2s ease-in-out;
-}
-
-.image_ini2 {
-border-bottom: 1px solid #fff;
-height: 430px;
-display: flex;
-padding: 1%;
-padding-top: 2%;
-transition: all .2s ease-in-out;
-}
-
-
-.banner {
-  width: 52%;
-  /*border: 1px solid red;*/
-}
-
-.recuadro {
-  width: 70%;
-  height: auto;
-  margin-left: 17%;
-  margin-top: 9%;
-}
-
-.recuadro h1 {
-  font-size: 2.6875rem;
-  font-weight: 400;
-  line-height: 1;
-  color: #fff;
-  font-family: Arial;
-}
-
 .titulo {
-  color: #fff;
-  font-size: 1.8em;
+  font-size: 1.5em;
   width: 70%;
   height: auto;
   margin-left: 17%;
@@ -231,7 +93,7 @@ transition: all .2s ease-in-out;
 }
 
 .titulo .auto-type {
-  color: #95dce0;
+  color: #3b75e0;
   font-size: 0.9em;
 }
 
@@ -254,16 +116,6 @@ transition: all .2s ease-in-out;
   background: rgba(255, 255, 255, 0.1);
 }
 
-.oculto {
-  width: 0;
-  height: 0;
-  border-top: 26.95em solid #050d1a;
-  border-right: 25px solid transparent;
-  position: absolute;
-  z-index: 1;
-  transition: all 0.3s ease-in-out;
-}
-
 
 /* CONTENIDO */
 
@@ -275,8 +127,6 @@ transition: all .2s ease-in-out;
   position: relative;
 }
 
-
-
 .container a {
   text-decoration: none;
 }
@@ -286,25 +136,6 @@ transition: all .2s ease-in-out;
   justify-content: center;
   align-items: center;
   /*border: 1px solid yellow;*/
-
-}
-
-.font-weight-bold {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /*border: 1px solid purple;*/
-  margin-top: 15px;
-  font-size: 1.0625rem;
-  color: #000;
-}
-
-.descripcion {
-  margin-top: 30px;
-  /*border: 1px solid blue;*/
-  font-size: 1.0625rem;
-  line-height : 25px;
-  color: #506690!important;
 }
 
 /* FOOTER */
@@ -312,203 +143,21 @@ transition: all .2s ease-in-out;
 footer {
   padding: 50px;
   margin-top: auto;
-  background-color: black;
-  
+  border-radius: 100% 100% 0 0 / 50% 70% 0 0;
 }
 
 footer h2 {
-  margin-left: 17%;
   font-family: -apple-system,BlinkMacSystemFont,"Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,sans-serif;
-  color: #fff;
+  text-align: center;
   font-size: 1em;
 }
 
-/* DROPDOWN FOR MOBILE */
-
-#menuArea input {
-  display: none;
-
-}
-
-.open {
-  background-color: #fff;
-  width: 24px;
-  height: 4px;
-  display: block;
-  border-radius: 2px;
-  cursor: pointer;
-  position: relative;
-  top: 8px;
-}
-
-.open:before {
-  content: "";
-  background-color: #fff;
-  width: 24px;
-  height: 4px;
-  display: block;
-  border-radius: 2px;
-  position: relative;
-  top: -8px;
-  transform: rotate(0deg);
-  transition: all 0.3s ease;
-  
-}
-
-.open:after {
-  content: "";
-  background-color: #fff;
-  width: 24px;
-  height: 4px;
-  display: block;
-  border-radius: 2px;
-  position: relative;
-  top: 4px;
-  transform: rotate(0deg);
-  transition: all 0.3s ease;
-  
-}
-
-.menuOpen {
-  width: 24px;
-  height: 20px;
-  padding: 15px;
-  cursor: pointer;
-  float: right;
-  /*border: 1px solid green;*/
-  position: relative;
-  display: flex;
-  justify-content: right;
-  top: 15%;
-  left: -190%;
-  display: none;
-}
-
-.menuOpen:hover .open:before {
-  top: -9px;
-}
-
-.menuOpen:hover .open:after {
-  top: 5px;
-}
-
-.menus {
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  top: 0;
-  left: 0;
-  background: #95dce0;
-  overflow: auto;
-}
-
-.menus label {
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  right: 20px;
-  top: 20px;
-  background-size: 100%;
-  cursor: pointer;
-  
-}
-
-.menus .menuContent {
-  position: relative;
-  top: 35%;
-  font-size: 30px;
-  text-align: center;
-  padding-bottom: 20px;
-  margin-top: -170px;
-  
-}
-
-.menus ul {
-  list-style: none;
-  padding: 0;
-  margin: 0 auto;
-  display: block;
-}
-
-.menus ul li a {
-  display: block;
-  color: white;
-  text-decoration: none;
-  transition: color 0.2s;
-  font-family: Trebuchet MS;
-  text-transform: uppercase;
-  padding: 10px 0;
-  
-}
-
-.menus ul li a:hover {
-  color: #ff8702;
-}
-
-.menus ul li:hover {
-  background: white;
-}
-
-.menuEffects {
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.5s, visibility 0.5s;
-  
-}
-
-.menuEffects ul {
-  transform: translateY(0%);
-  transition: all 0.5s;
-  
-}
-
-#menuToggle:checked ~ .menuEffects {
-  opacity: 1;
-  visibility: visible;
-  transition: opacity 0.5s;
-}
-
-#menuToggle:checked ~ .menuEffects ul {
-  opacity: 1;
-}
-
-#menuToggle:checked ~ .menuOpen .open {
-  background-color: transparent;
-}
-
-#menuToggle:checked ~ .menuOpen .open:before {
-  content: "";
-  background-color: white;
-  transform: rotate(45deg);
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 1;
-}
-
-#menuToggle:checked ~ .menuOpen .open:after {
-  content: "";
-  background-color: white;
-  transform: rotate(-45deg);
-  position: relative;
-  top: 0;
-  right: 0;
-  z-index: 1;
-}
-
-#menuToggle:not(:checked) ~ .menuEffects ul {
-  transform: translateY(-30%);
-}
-
-.menuContent .submenu2_movil li a {
-  color:#000;
-}
 
 
 /* BRILLO WEB MOON AND SUN */
 
 .claro{ 
-  background-color: #949494; 
+  background-color: #565b66; 
   color: #f1eded;
   transition: all 0.3s ease-in-out;
 }
@@ -516,7 +165,7 @@ footer h2 {
 .oculto2 {
   width: 0;
   height: 0;
-  border-top: 26.95em solid #949494;
+  border-top: 26.95em solid #565b66;
   border-right: 25px solid transparent;
   position: absolute;
   z-index: 1;
