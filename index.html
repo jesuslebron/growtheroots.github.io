@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>MJ Computing</title>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="copyright" content="GROW THE ROOTS"/>
+	<meta name="robots" content="index">
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="css/style2.css" media="screen">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+	<link rel="stylesheet" href="/css/font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+	<script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+	<link rel="shortcut icon" href="/img/logo.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="contenedor">
+        <header>
+            <a href="index.html" class="logoo"><img class="logo" alt="logo" src="/img/logo.png" style="width: 80px; height: 80px;"></a>
+            <ul class="submenu">
+                <li><a href="index.html"><strong>Inicio</strong></a></li>ß
+                <li><a href="about.html"><strong>About</strong></a></li>
+            </ul>
+            <div id="menuArea">
+                <input type="checkbox" id="menuToggle">
+            
+                <label for="menuToggle" class="menuOpen">
+                    <span class="open"></span>
+                </label>
+            
+                <div class="menus menuEffects">
+                    <label for="menuToggle"></label>
+                    <div class="menuContent">
+                        <ul>
+                            <li><a href="index.html">Inicio</a></li>
+                            <li><a href="about.html">About</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- <div class="bannerr"></div> -->
+        <script>
+            window.addEventListener("scroll", function(){
+                var header = document.querySelector("header");
+                header.classList.toggle("sticky", window.scrollY > 0);
+            })
+        </script>
+        <script>
+            var nav = $('.menuContent > ul > .submenu1_movil');
+            nav.find('li').hide();
+            nav.click(function () {
+                nav.not(this).find('li').hide();
+                $(this).find('li').slideToggle();
+            });
+            $(function() {  
+                $('#menu input').click(function () { 
+                $('.menuContent ul').slideToggle() 
+            });
+                });
+        </script>
+        
+        <div class="portada" style="background-image: url(https://cdn.pixabay.com/photo/2019/08/10/20/39/the-roots-of-the-4397679_1280.jpg);">
+            <div class="titulo_about"><h1>Grow the roots</h1></div>
+        </div>
+
+        <main class = "container_about">
+            <div id="texto">
+                <h1>GAME TO GLOBAL GAME</h1><br>
+                <p>DESCRIPCION<br><br><br>
+                </p>
+                <p>MAS INFO<br><br>
+                </p>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <h2 style="color: #fff;">© 2023 Grow the roots --> GLOBAL GAME JAM</h2>
+        <div class="botones">
+            <div class="moon">
+                <input type="checkbox" id="theme-toggle" onclick="cambiarModo()">
+                <label for="theme-toggle"></label>
+            </div>
+            <div id="topBtn"><p><img src="/img/up.png" alt="up" style="position: absolute; top: 78%; left: 50%; transform: translate(-50%, -50%); width: 40px; height: 40px;"></p></div>
+        </div>   
+    </footer>
+
+    <script> 
+        function cambiarModo() { 
+        var cuerpoweb = document.body; 
+        cuerpoweb.classList.toggle("claro");
+        $('.oculto').toggleClass('oculto2');
+        $('.image_ini').toggleClass('image_ini2');
+        $('header').toggleClass('header2');
+        //var oculto = document.getElementById('oculto').style.borderBlockColor = ("#949494");
+        }
+    </script>
+
+    <script src="/js/script.js"></script>
+    <script src="/js/script2.js"></script>
+
+</body>
+</html>
