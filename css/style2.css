@@ -84,9 +84,11 @@ body {
 
 .container_main ul {
   color: #95dce0;
-  text-align: left;
+  text-align: center;
   margin-bottom: 0.5%;
 }
+
+
 
 .galeria {
   height: 500px;
@@ -100,6 +102,7 @@ body {
   top: 0;
   left: 0;
   opacity: 0;
+  text-align: center;
   transition: opacity 3s;
   border-radius: 5%;
 }

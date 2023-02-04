@@ -86,22 +86,19 @@ color: #95dce0;
   font-size: 1.5em;
   width: 70%;
   height: auto;
-  margin-left: 17%;
+  margin-left: 15%;
   margin-top: 2%;
   animation: 8s anim-lineUp ease-out;
   font-family: sans-serif;
+  text-align: center;
 }
 
 .titulo .auto-type {
   color: #3b75e0;
   font-size: 0.9em;
+  text-align: center;
 }
 
-.boton {
-  width: 70%;
-  margin-top: 3.5%;
-  margin-left: 17%;
-}
 
 .btn {
   background-color: #95dce0;
