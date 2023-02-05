@@ -113,8 +113,22 @@ body {
   left: 1.5em;
 }
 
-.foto, img{
+.foto, img {
+  position: relative;
   margin-left: 10%;
+  text-align: center;
+  border-radius: 5%;
+  width: 650px;
+  height: 460px;
+}
+
+.video, video {
+  position: relative;
+  margin-left: 10%;
+  text-align: center;
+  border-radius: 5%;
+  width: 650px;
+  height: 460px;
 }
 
 .galeria input[type=radio]:nth-of-type(1):checked ~ img:nth-of-type(1) {
