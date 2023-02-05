@@ -88,8 +88,6 @@ body {
   margin-bottom: 0.5%;
 }
 
-
-
 .galeria {
   height: 500px;
   width: 700px;
@@ -100,7 +98,7 @@ body {
 .galeria img {
   position: absolute;
   top: 0;
-  left: 2.5%;
+  right: 5.5%;
   opacity: 0;
   text-align: center;
   transition: opacity 3s;
@@ -112,7 +110,11 @@ body {
 .galeria input[type=radio] {
   position: relative;
   bottom: -460px;
-  left: .5em;
+  left: 1.5em;
+}
+
+.foto, img{
+  margin-left: 10%;
 }
 
 .galeria input[type=radio]:nth-of-type(1):checked ~ img:nth-of-type(1) {
